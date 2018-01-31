@@ -46,6 +46,7 @@ public class InsertServlet extends HttpServlet {
       ps.setString(3, desc);
       ps.setString(4,price);
       int i = ps.executeUpdate();
+      
       response.sendRedirect("products"); 
 
     } catch (Exception se) {
